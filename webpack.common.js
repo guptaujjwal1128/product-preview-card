@@ -8,7 +8,7 @@ module.exports = {
     bundle: path.resolve(__dirname, "src/index.js"),
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     filename: "[name][contenthash].js",
     assetModuleFilename: "[name][ext]",
   },
@@ -42,7 +42,7 @@ module.exports = {
       template: "./src/template.html",
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "src/assets", to: "assets" }],
+      patterns: [{ from: "src/assets/images", to: "assets" }],
     }),
   ],
 };
