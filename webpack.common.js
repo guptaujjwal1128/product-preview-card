@@ -42,7 +42,7 @@ module.exports = {
       template: "./src/template.html",
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "src/assets/images", to: "assets" }],
+      patterns: [{ from: "src/assets", to: "assets" }],
     }),
   ],
 };
